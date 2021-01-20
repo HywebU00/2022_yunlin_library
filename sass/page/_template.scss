@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    // background: url('../images/bg.jpg')no-repeat left top;
+    background: url('../images/bg_test.jpg')no-repeat left top;
+    background-size: cover;
+    // background-attachment: fixed;
+    &.noscroll {
+        position: static !important;
+        width: 100%;
+        height: 100%;
+        overflow: hidden !important;
+        overflow-y: hidden !important;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// 最外圍預設為100%
+.wrapper {
+    width: 100%;
+    margin: 0px auto;
+    position:relative;
+    @include screen('mobile') {
+        background: #FFF;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+
+}
+
+// 整體共用container樣式，請注意首頁切版頁面的整齊
+.container {
+    padding: 0;
+    margin: 0 auto;
+    max-width: $container-max; //請看_variable.scss
+}
+
+.main {
+    position: relative;
+    margin: 0 auto;
+
+    // 可先設定一個中央區塊最大寬，限制accesskey對齊
+    @include screen('mobile') {
+        padding-top: 55px;
+        background-image: none;
+    }
+    h2 {
+        font-family: 'Noto Serif TC', serif;
+        font-size: 2.125em;
+        line-height: 1.25em;
+        letter-spacing: 2px;
+        text-align: left;
+        font-weight: 600;
+        color:$secondaryColor;
+    }
+
+    .col {
+        @include gutter;
+    }
+    .news, .recent_activities{
+     overflow: hidden;
+       //background-color: #fff;
+       @include screen('mobile') {
+        padding-left:15px;
+    }
+}
+.reader_service{
+    padding-left: 3.5em;
+    @include screen('mobile') {
+        padding-left: 15px;
+    }
+}
+
+}
+
+////////////////////////////////////////////////////////////
+// 為了與首頁區隔，請在內頁加上innerpage ClassName
+.innerpage {
+    background: url(../images/flower_w_04.png) right -20px bottom -80px no-repeat;
+    background-size: 400px;
+    @include screen('mobile') {
+        padding-top: 60px;
+    }
+
+    h3.title{
+        display:inline-block;
+        position: relative;
+        font-family: 'Noto Serif TC', serif;
+        margin: 1em 0 .5em;
+    }
+
+    >.container {
+        @include gutter(); //gutter 代表左右要留白
+    }
+
+    .main_image {
+        padding-left:calc( ( 100% - 1100px ) / 2 );
+        background:$lightColor url(../images/flower_w_04.png) left 10px bottom -60px no-repeat;
+        .img-container {
+            height: 220px;
+            position:relative;
+
+            @include screen('tablet') {
+                height: 200px;
+            }
+
+            @include screen('mobile') {
+                height: 160px;
+            }
+
+            @include screen('xs_mobile') {
+                height: 120px;
+            }
+        }
+    }
+
+    .function_nav {
+        position: relative;
+
+        .function {
+            position: absolute;
+            right: 0;
+            top: 1px;
+
+            @include screen('mobile') {
+                position: static;
+            }
+        }
+    }
+    .library_info{
+        // background: url(../images/flower_g_01.png) right 8% bottom  no-repeat;
+        &:after{
+            display:none;
+        }
+        .info_content{
+            &:before{
+                display:none;
+            }
+            .library_name{
+                padding:0 0 .5em;
+                font-size: 1.125em;
+                font-weight: bold;
+                margin: .5em 0;
+                color:$secondaryColor;
+                border-bottom: solid 1px #ccc;
+            }
+            ul{
+                li{
+                    &:before{
+                        // content: "";
+                        // position:absolute;
+                        // width:12px;
+                        // height:1px;
+                        // background-color: $secondaryColor;
+                        // left:0;
+                        // top:1.25em;
+                    }
+
+                }
+            }
+            .info_address{
+                position: relative;
+                &:before{
+                    background: url(../images/icon-address2.png) no-repeat center center!important;
+                    background-size: 16px auto!important;
+                }
+            }
+            .info_phone{
+                position: relative;
+                &:before{
+                    background: url(../images/icon-phone2.png) no-repeat center center!important;
+                    background-size: 16px auto!important;
+                }
+            }
+            .info_opening{
+                position: relative;
+                &:before{
+                    background: url(../images/icon-opening2.png) no-repeat center center!important;
+                    background-size: 16px auto!important;
+                }
+            }
+            .info_closed{
+                position: relative;
+                &:before{
+                    background: url(../images/icon-closed2.png) no-repeat center center!important;
+                    background-size: 16px auto!important;
+                }
+            }
+            .info_stat{
+                position: relative;
+                &:before{
+                    background: url(../images/icon-stat2.png) no-repeat center center!important;
+                    background-size: 16px auto!important;
+                }
+            }
+            .info_collection{
+                position: relative;
+                &:before{
+                    background: url(../images/icon-stat2.png) no-repeat center center!important;
+                    background-size: 16px auto!important;
+                }
+            }
+        }
+
+    }
+    .recent_activities{
+        padding-left:15px;
+        &:before{
+            display:none;
+        }
+        .activities_content{
+            background-color: rgba(255,255,255,0);
+        }
+    }
+}
+
+.more {
+    // float: right;
+    font-size: .938em;
+    text-align: center;
+    margin: 25px auto 10px;
+    width: 8em;
+    position: relative;
+
+    @include screen('mobile') {
+        margin-bottom:20px;
+    }
+
+    a {
+        color: $importantColor;
+        vertical-align:middle;
+        padding: 0 8px 2px 0;
+        display: block;
+        &:hover, &:focus {
+            color:darken($importantColor,10);
+            &:after {
+            }
+        }
+    }
+    &:before{
+        content:'';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 0 0 6px;
+        border-color: transparent transparent transparent $importantColor;
+        position: absolute;
+        bottom:1px;
+        right:0;
+    }
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin: 2px auto;
+        background-color: $importantColor;
+        transform-origin:50%;
+        transition: all .3s;
+    }
+
+}
+
+@keyframes more_gogo {
+    0% {
+        transform: translateX(0) rotate(45deg);
+    }
+
+    50% {
+        transform: translateX(3px) rotate(45deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(45deg);
+    }
+}

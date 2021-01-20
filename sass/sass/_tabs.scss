@@ -1,0 +1,164 @@
+.tabSet {
+    max-width: 100%;
+    margin: 0 auto;
+    padding:5px 0;
+    //overflow: hidden;
+    text-align:center;
+    
+    @extend %clearfix;
+    @include screen('notebook') {
+        // text-align: right;
+    }
+    @include screen('mobile') {
+        width: auto;
+        height: auto !important;
+    }
+}
+.tabs {
+    position: relative;
+    &>.tabItem {
+        //float: left;
+        position: relative;
+        display:inline-block;
+        font-size:1.063em;
+        line-height: 1;
+        font-weight: bold;
+        margin:0;
+        &.active{
+            >a {
+                background: $secondaryColor;
+                color:#fff;
+                border-radius: 30px;
+                @include screen('mobile') {
+                  margin-bottom: 0;  
+              }
+          }
+          &:before{
+
+          }
+          &:after{
+            content:"";
+            position: absolute;
+            left:50%;
+            bottom:-14px;
+            width: 0px;
+            height: 8px;
+            margin-left: -10px;
+            border-style: solid;
+            border-width: 8px 9px 0 9px;
+            border-color: $secondaryColor transparent transparent transparent;
+
+        }
+    }
+
+    &>a {
+        display: block;
+        padding: .5em 1.2em;
+        text-align: center;
+        // background-color: #fff;
+        color: $secondaryColor;
+        text-decoration: none;
+        position: relative;
+        transition: all .3s;
+        min-width: 5em;
+        @include text-overflow;
+        @include box-sizing;
+        @include screen('mobile') {
+            margin-bottom: .3em;
+            max-width:100%;
+            background-color: $lightColor;
+            border-radius: 30px;
+        }
+        &:hover {
+            background: $secondaryColor;
+            color:#fff;
+            border-radius: 30px;
+        }
+    }
+}
+}
+
+
+// .bg-1{
+//     .tabs{
+//         &>.tabItem {
+//             &.active{
+//                 >a {
+//                     background: #fff;
+//                     color:$primaryColor;
+//                     @include screen('mobile') {
+//                         margin-bottom: 0;
+//                         background: $secondaryColor;
+//                         color:#fff;
+//                     }
+//                 }
+//                 &:after{
+//                     border-color: #fff transparent transparent transparent;
+//                     @include screen('mobile') {
+//                      border-color: $secondaryColor transparent transparent transparent; 
+//                  }
+//              }
+//          } 
+//          &>a {
+//            background-color: transparent;
+//            color:#fff;
+//            @include screen('mobile') {
+//             margin-bottom: .3em;
+//             max-width:100%;
+//             background-color: $lightColor;
+//             border-radius: 30px;
+//             color:$aHover;
+//         }
+//     }
+// }
+// }
+// }
+
+//多組 可設定差異
+.example-2 {
+    .tabItem>a:hover {
+        background: $secondaryColor;
+    }
+    .tabItem.active>a {
+        background: $secondaryColor;
+    }
+}
+// 顯示content
+.active+.tabContent {
+    display: block;
+}
+.tabContent {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    clear: both;
+    padding: 30px 20px;
+    display: none;
+    text-align: left;
+    @include screen('mobile') {
+        position: static;
+    }
+    ul {
+        @include li-reset;
+    }
+    li {
+        margin: 0;
+        padding: 1em 0;
+        line-height: 1.6;
+        border-bottom: 1px $color-gray solid;
+
+        @include screen('mobile') {
+            // @include text-overflow();
+        }
+        a {
+            @include aSetting_nocolor;
+        }
+        // time {
+        //     display: inline-block;
+        //     margin: 0 1em;
+        //     font-size: .813em;
+        //     color: #868686;
+        // }
+    }
+}
