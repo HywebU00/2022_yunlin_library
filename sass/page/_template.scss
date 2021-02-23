@@ -223,9 +223,10 @@ body {
     // float: right;
     font-size: .938em;
     text-align: center;
-    margin: 25px auto 10px;
+    margin: 25px 0 10px;
     width: 8em;
     position: relative;
+    float: right;
 
     @include screen('mobile') {
         margin-bottom:20px;
@@ -250,7 +251,7 @@ body {
         border-width: 6px 0 0 6px;
         border-color: transparent transparent transparent $importantColor;
         position: absolute;
-        bottom:1px;
+        bottom:3px;
         right:0;
     }
     &:after {
