@@ -211,7 +211,6 @@
         height: 40px;
         border: 0;
         border: 1px solid darken($lightColor, 5);
-        border-right: none;
         border-right: 0;
         border-radius:.125em 0 0 .125em;
         box-shadow: 0 0 5px rgba(151, 151, 151, .3);
@@ -233,7 +232,10 @@
         position:relative;
         input {
             margin:0;
-            box-shadow: 0 0 5px rgba(151, 151, 151, .3);
+            box-shadow: 3px 0 5px rgba(151, 151, 151, .3);
+            @include screen('mobile'){
+                box-shadow: none;
+            }
 
             &[type="text"] {
                 position: absolute;
@@ -429,14 +431,7 @@
                     color: #FFF;
                 }
                 &:after{
-                    content:'/';
-                    position: absolute;
-                    top:.75em;
-                    right:0;
                     color: #fff;
-                    @include screen('mobile') {
-                        display: none;
-                    }
                 }
             }
         }

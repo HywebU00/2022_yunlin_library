@@ -139,7 +139,9 @@
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 4;
                 overflow: hidden;
-                max-height: 5.75em;
+                max-height: 5.9em;
+                font-weight: normal;
+                line-height: 1.5;
             }
         }
         .list_title{
@@ -151,6 +153,7 @@
                 max-height: 3.125em;
                 color: $color-word;
                 font-weight: bold;
+                line-height: 1.5;
                 @include screen("mobile"){
                     display:block;
                     max-height: 100%;
@@ -312,6 +315,7 @@
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3;
             overflow: hidden;
+            font-weight: normal;
         }
     }
 }

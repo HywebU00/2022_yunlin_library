@@ -217,7 +217,7 @@ $(function() {
     if ($('header .menu').length > 0){
         var stickyMenuTop = Math.floor($('.header .menu').offset().top);
         console.log(stickyMenuTop);
-        hh = Math.floor($('.header').outerHeight(true));
+        hh = Math.floor($('.header').height());
         menuH = Math.floor(_menu.outerHeight(true));
         $(window).bind("load scroll resize", function(e) {
             ww = _window.outerWidth();

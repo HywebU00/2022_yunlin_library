@@ -60,6 +60,7 @@
             @include make-lg-column(4);
             //@include gutter();
             margin:1% 0;
+            background: transparent;
             //padding:0;
             .thumbnail{
                 box-shadow: none;
