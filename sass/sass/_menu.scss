@@ -17,24 +17,24 @@
             min-width:6em;
             text-align: center;
             position: relative;
-            &:after{
-                content:'/';
-                position: absolute;
-                top:.75em;
-                right:0;
-                color: $secondaryColor;
-                @include screen('mobile') {
-                    display: none;
-                }
-            }
-            &:last-child{
-               &:after{
-                content:'';
-            } 
-            a{
-                padding: 0 .8em;
-            }
-        }
+        //     &:after{
+        //         content:'/';
+        //         position: absolute;
+        //         top:.75em;
+        //         right:0;
+        //         color: $secondaryColor;
+        //         @include screen('mobile') {
+        //             display: none;
+        //         }
+        //     }
+        //     &:last-child{
+        //        &:after{
+        //         content:'';
+        //     } 
+        //     a{
+        //         padding: 0 .8em;
+        //     }
+        // }
         >a {
             display: block;
             padding: 0 1.5em 0 .8em;
