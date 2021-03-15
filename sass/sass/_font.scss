@@ -31,7 +31,6 @@ body {
     line-height: 1.45em;
     font-family:$font-family;
     -webkit-text-size-adjust: none;
-    font-weight: bold;
 }
 a {
     @include aSetting();

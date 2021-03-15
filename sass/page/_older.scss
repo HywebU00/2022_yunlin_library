@@ -529,18 +529,7 @@
     .innerpage{
     	background: none;
     }
-
-    %btn{
-    	font-size: ($font-size*1.125);
-    }
-    // 文字列表
-    .list{
-    	font-size: 1.125em;
-    }
-    //頁碼
-    .pagination{
-    	font-size: 1.125em;
-    }
+    
     .lp{
     	.link_grp{
     		li{
@@ -556,5 +545,18 @@
     			font-size: 1.125em;
     		}
     	}
+    }
+    .lp,
+    .cp, 
+    .pagination,
+    .questionnaire,
+    .sitemap{
+        font-size: 1.125em;
+    }
+    .sitemap{
+        p{
+            font-size: 1rem;
+            line-height: 1.5;
+        }
     }
 }
