@@ -81,6 +81,9 @@ footer {
         @include clearfix();
         margin:.5em auto;
         float: left;
+        @include screen('mobile'){
+            float: none;
+        }
         li {
             float: left;
             display: block;
