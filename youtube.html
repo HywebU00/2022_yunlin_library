@@ -1,0 +1,376 @@
+<!DOCTYPE html><html xml:lang="zh-TW" lang="zh-TW" xmlns:user="urn:user-namespace-here" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:hyweb="urn:gip-hyweb-com" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>雲林縣公共圖書館-影片欣賞-微冊角落閱讀大使-吳可熙</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="vendor/slick/slick.css">
+	<link rel="stylesheet" href="vendor/slick/slick-theme.css">
+	<link rel="stylesheet" href="vendor/pg_calendar/css/pignose.calendar.min.css">
+	<link rel="stylesheet" href="vendor/animate.css">
+	<link rel="stylesheet" href="css/hyui.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<nav class="navigation"><ul>
+					<li><a href="/wSite/mp?mp=1">回首頁</a></li>
+					<li><a href="/wSite/sitemap">網站導覽</a></li>
+					<li><a href="https://content.yunlin.gov.tw/" target="_blank">雲林縣政府文化觀光處</a></li>
+				</ul></nav>
+				<div class="user"><ul>
+					<li><a href="/wSite/mp?mp=10" tabindex="3">兒童版</a></li>
+					<li><a href="/wSite/mp?mp=2" tabindex="4">樂齡版</a></li>
+				</ul></div>
+				<div class="search"><form action="" class="form_inline">
+					<select name="selectSample" id="selectSample">
+						<option value="1" aria-labelledby="館藏查詢">館藏查詢</option> 
+					</select>
+					<div class="form_grp">
+						<label for="inquiry">搜尋</label>
+						<input name="inquiry" id="inquiry" type="text" placeholder="請輸入文字" accesskey="S">
+						<input name="" type="submit" title="查詢" value="查詢" onclick="goSearch()" />
+					</div>
+				</form></div>
+				<h1>
+					<a href="index.html"><img src="images/logo3.png" alt="雲林縣公共圖書館" /></a>
+				</h1>
+			</div>
+			<div class="menu">
+				<ul>
+					<li>
+						<a href="np?ctNode=5222&mp=1&idPath=5217_5222" title="認識圖書館">認識圖書館</a>
+						<ul>
+							<li>
+								<a href="sp?xdUrl=/wSite/ApBlock/Library.jsp&mp=1&ctNode=5236&idPath=5217_5222_5236" title="雲林縣公共圖書館簡介">雲林縣公共圖書館簡介</a>
+							</li>
+							<li>
+								<a href="np?ctNode=5237&mp=1&idPath=5217_5222_5237" title="雲林縣公共圖書館CIS">雲林縣公共圖書館CIS</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="np?ctNode=5221&mp=1&idPath=5217_5221" title="讀者服務">讀者服務</a>
+						<ul>
+							<li>
+								<a href="https://webpacx.ylccb.gov.tw/" title="館藏查詢, 另開新視窗." target="_blank">館藏查詢</a>
+							</li>
+							<li>
+								<a href="https://webpacx.ylccb.gov.tw/bookrecommend" title="圖書推薦, 另開新視窗." target="_blank">圖書推薦</a>
+							</li>
+							<li>
+								<a href="https://webpacx.ylccb.gov.tw/register" title="網路辦證, 另開新視窗." target="_blank">網路辦證</a>
+							</li>
+							<li>
+								<a href="np?ctNode=6221&mp=1&idPath=5217_5221_6221" title="團體借閱證申請">團體借閱證申請</a>
+							</li>
+							<li>
+								<a href="np?ctNode=6222&mp=1&idPath=5217_5221_6222" title="雲林縣公共圖書館APP">雲林縣公共圖書館APP</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="np?ctNode=5223&mp=1&idPath=5217_5223" title="規則與使用辦法借閱">規則與使用辦法借閱</a>
+						<ul>
+							<li>
+								<a href="np?ctNode=5240&mp=1&idPath=5217_5223_5240" title="文觀處圖書館閱覽及使用規則">文觀處圖書館閱覽及使用規則</a>
+							</li>
+							<li>
+								<a href="np?ctNode=5241&mp=1&idPath=5217_5223_5241" title="代借代還服務要點">代借代還服務要點</a>
+							</li>
+							<li>
+								<a href="lp?ctNode=5242&mp=1&idPath=5217_5223_5242" title="各鄉鎮市圖書館借閱規則">各鄉鎮市圖書館借閱規則</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="np?ctNode=7267&mp=1&idPath=5217_7267" title="雲林分區資源中心">雲林分區資源中心</a>
+					</li>
+					<li>
+						<a href="np?ctNode=6252&mp=1&idPath=5217_6252" title="閱讀推廣">閱讀推廣</a>
+						<ul>
+							<li>
+								<a href="https://webpacx.ylccb.gov.tw/exhibition" title="主題書展, 另開新視窗." target="_blank">主題書展</a>
+							</li>
+							<li>
+								<a href="lp?ctNode=6254&mp=1&idPath=5217_6252_6254" title="影片欣賞">影片欣賞</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="np?ctNode=6255&mp=1&idPath=5217_6255" title="微冊角落">微冊角落</a>
+					</li>
+					<li>
+						<a href="np?ctNode=5224&mp=1&idPath=5217_5224" title="電子資源">電子資源</a>
+						<ul>
+							<li>
+								<a href="https://lib.ebookservice.tw/ylc/" title="台灣雲端書庫@雲林縣, 另開新視窗." target="_blank">台灣雲端書庫@雲林縣</a>
+							</li>
+							<li>
+								<a href="https://www.airitibooks.com/" title="華藝電子書, 另開新視窗." target="_blank">華藝電子書</a>
+							</li>
+							<li>
+								<a href="https://ebook.nlpi.edu.tw/" title="國立公共資訊圖書館電子書服務平臺, 另開新視窗." target="_blank">國立公共資訊圖書館電子書服務平臺</a>
+							</li>
+							<li>
+								<a href="https://allpass.nlpi.edu.tw/#/home" title="國立公共資訊圖書館一證通整合平臺, 另開新視窗." target="_blank">國立公共資訊圖書館一證通整合平臺</a>
+							</li>
+							<li>
+								<a href="http://www.tumblebooklibrary.com/auto_login.aspx?U=touliu&P=libra" title="TumbleBooks互動英文電子書, 另開新視窗." target="_blank">TumbleBooks互動英文電子書</a>
+							</li>
+							<li>
+								<a href="https://cu.ncl.edu.tw/" title="國家圖書館遠距學園, 另開新視窗." target="_blank">國家圖書館遠距學園</a>
+							</li>
+							<li>
+								<a href="lp?ctNode=6247&mp=1&idPath=5217_5224_6247" title="空中英語教室-影音典藏系統資料庫, 另開新視窗." target="_blank">空中英語教室-影音典藏系統資料庫</a>
+							</li>
+							<li>
+								<a href="https://storybook.nlpi.edu.tw/" title="圓夢繪本資料庫, 另開新視窗." target="_blank">圓夢繪本資料庫</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<noscript>TAB標籤功能，如不執行不影響您資料瀏覽</noscript>
+		</header>
+		<div id="center" class="main innerpage">
+			<a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+			<section class="col-12 full main_image">
+				<div class="container">
+					<div class="img-container">
+						<picture>
+							<source media="(min-width: 1200px)" data-lazy-srcset="images/top_bg.jpg"></source>
+							<source media="(min-width: 992px)" data-lazy-srcset="images/top_bg.jpg"></source>
+							<source media="(min-width: 576px)" data-lazy-srcset="images/top_bg.jpg"></source>
+							<source media="(max-width: 575px)" data-lazy-srcset="images/top_bg.jpg"></source>
+							<img data-original="images/top_bg.jpg" alt="形象圖檔" class="cover lazy"><noscript>
+								<img src="images/top_bg.jpg" alt="形象圖檔"></noscript>
+							</picture>
+						</div>
+					</div>
+				</section>
+				<div class="container">
+					<div class="function_nav">
+						<div class="breadcrumb">
+							<span class="before">現在位置</span>：<a href="mp?mp=1" title="首頁">首頁</a>
+							>
+							<a href="np?ctNode=6252&mp=1" title="閱讀推廣">閱讀推廣</a>
+							>
+							<a href="np?ctNode=6254&mp=1" title="影片欣賞">影片欣賞</a>
+						</div>
+						<div class="function">
+							<ul>
+								<li>
+									<a href="javascript:history.back();" class="back" title="回上一頁">回上一頁</a>
+									<noscript>當script無法執行時可按"alt + &larr;"鍵替代</noscript>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<section class="cp">
+						<h2 class="title">
+							<span>影片欣賞</span>
+						</h2>
+						<h3>微冊角落閱讀大使-吳可熙</h3>
+						<div class="function_panel">
+							<ul>
+								<li>資料來源：<span>雲林縣公共圖書館</span>
+								</li>
+								<li>日期：<span>2021/07/23</span>
+								</li>
+							</ul>
+						</div>
+						<p>
+							<div class="img-container"><iframe frameborder="0" src="https://www.youtube.com/embed/9GD5pBCEFag" title="YouTube video player" class="cover"></iframe></div>
+						</p>
+						<script type="text/javascript">
+			//window.addEvent('domready', function(){
+				var tabpanel1 = new TabPanel("tabpanel_1");
+				widgets.add(tabpanel1);
+			//});
+		</script>
+		<noscript>TAB標籤效果，如不執行不影響您資料瀏覽</noscript>
+	</section>
+</div>
+</div>
+<section class="fatfooter">
+	<div class="container">
+		<button type="button" name="收合" class="btn btn-fatfooter">CLOSE</button>
+		<nav>
+			<ul>
+				<li>
+					<a href="np?ctNode=5222&mp=1&idPath=5217_5222" title="認識圖書館">認識圖書館</a>
+					<ul>
+						<li>
+							<a href="sp?xdUrl=/wSite/ApBlock/Library.jsp&mp=1&ctNode=5236&idPath=5217_5222_5236" title="雲林縣公共圖書館簡介">雲林縣公共圖書館簡介</a>
+						</li>
+						<li>
+							<a href="np?ctNode=5237&mp=1&idPath=5217_5222_5237" title="雲林縣公共圖書館CIS">雲林縣公共圖書館CIS</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="np?ctNode=5221&mp=1&idPath=5217_5221" title="讀者服務">讀者服務</a>
+					<ul>
+						<li>
+							<a href="https://webpacx.ylccb.gov.tw/" title="館藏查詢, 另開新視窗." target="_blank">館藏查詢</a>
+						</li>
+						<li>
+							<a href="https://webpacx.ylccb.gov.tw/bookrecommend" title="圖書推薦, 另開新視窗." target="_blank">圖書推薦</a>
+						</li>
+						<li>
+							<a href="https://webpacx.ylccb.gov.tw/register" title="網路辦證, 另開新視窗." target="_blank">網路辦證</a>
+						</li>
+						<li>
+							<a href="np?ctNode=6221&mp=1&idPath=5217_5221_6221" title="團體借閱證申請">團體借閱證申請</a>
+						</li>
+						<li>
+							<a href="np?ctNode=6222&mp=1&idPath=5217_5221_6222" title="雲林縣公共圖書館APP">雲林縣公共圖書館APP</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="np?ctNode=5223&mp=1&idPath=5217_5223" title="規則與使用辦法借閱">規則與使用辦法借閱</a>
+					<ul>
+						<li>
+							<a href="np?ctNode=5240&mp=1&idPath=5217_5223_5240" title="文觀處圖書館閱覽及使用規則">文觀處圖書館閱覽及使用規則</a>
+						</li>
+						<li>
+							<a href="np?ctNode=5241&mp=1&idPath=5217_5223_5241" title="代借代還服務要點">代借代還服務要點</a>
+						</li>
+						<li>
+							<a href="lp?ctNode=5242&mp=1&idPath=5217_5223_5242" title="各鄉鎮市圖書館借閱規則">各鄉鎮市圖書館借閱規則</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="np?ctNode=7267&mp=1&idPath=5217_7267" title="雲林分區資源中心">雲林分區資源中心</a>
+				</li>
+				<li>
+					<a href="np?ctNode=6252&mp=1&idPath=5217_6252" title="閱讀推廣">閱讀推廣</a>
+					<ul>
+						<li>
+							<a href="https://webpacx.ylccb.gov.tw/exhibition" title="主題書展, 另開新視窗." target="_blank">主題書展</a>
+						</li>
+						<li>
+							<a href="lp?ctNode=6254&mp=1&idPath=5217_6252_6254" title="影片欣賞">影片欣賞</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="np?ctNode=6255&mp=1&idPath=5217_6255" title="微冊角落">微冊角落</a>
+				</li>
+				<li>
+					<a href="np?ctNode=5224&mp=1&idPath=5217_5224" title="電子資源">電子資源</a>
+					<ul>
+						<li>
+							<a href="https://lib.ebookservice.tw/ylc/" title="台灣雲端書庫@雲林縣, 另開新視窗." target="_blank">台灣雲端書庫@雲林縣</a>
+						</li>
+						<li>
+							<a href="https://www.airitibooks.com/" title="華藝電子書, 另開新視窗." target="_blank">華藝電子書</a>
+						</li>
+						<li>
+							<a href="https://ebook.nlpi.edu.tw/" title="國立公共資訊圖書館電子書服務平臺, 另開新視窗." target="_blank">國立公共資訊圖書館電子書服務平臺</a>
+						</li>
+						<li>
+							<a href="https://allpass.nlpi.edu.tw/#/home" title="國立公共資訊圖書館一證通整合平臺, 另開新視窗." target="_blank">國立公共資訊圖書館一證通整合平臺</a>
+						</li>
+						<li>
+							<a href="http://www.tumblebooklibrary.com/auto_login.aspx?U=touliu&P=libra" title="TumbleBooks互動英文電子書, 另開新視窗." target="_blank">TumbleBooks互動英文電子書</a>
+						</li>
+						<li>
+							<a href="https://cu.ncl.edu.tw/" title="國家圖書館遠距學園, 另開新視窗." target="_blank">國家圖書館遠距學園</a>
+						</li>
+						<li>
+							<a href="lp?ctNode=6247&mp=1&idPath=5217_5224_6247" title="空中英語教室-影音典藏系統資料庫, 另開新視窗." target="_blank">空中英語教室-影音典藏系統資料庫</a>
+						</li>
+						<li>
+							<a href="https://storybook.nlpi.edu.tw/" title="圓夢繪本資料庫, 另開新視窗." target="_blank">圓夢繪本資料庫</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div></section>
+	<section>
+
+
+
+
+
+
+
+		<!-- footer Start-->
+		<footer>
+			<div class="container">
+				<a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+				<div class="footer_info">
+					<p class="Copyright">
+						<b>雲林縣政府文化觀光處圖書館</b><br />
+						<b>地址：64054 雲林縣斗六市大學路三段310號　服務台專線電話：05-5523137</b><br />
+						<span class="update">更新日期：<em>2022/02/14</em></span>
+
+						<span class="counter">瀏覽人次：<em>423878</em></span>
+					</p>
+					<!-- <div class="qrcode"><img src="images/qrcode.jpg" alt=""></div> -->
+				</div>
+			</div>
+			<div class="col-12 footer_bottom">
+				<div class="container">
+					<ul class="footer_link">
+						<li><a href="ct?xItem=9934&ctNode=6220&mp=1">隱私權政策</a></li>
+						<li><a href="ct?xItem=9933&ctNode=6220&mp=1">資訊安全宣告</a></li>
+						<li><a href="ct?xItem=10030&ctNode=6220&mp=1">政府網站資料開放宣告</a></li>
+					</ul>
+					<p class="copyright">Copyright © 2021 The Public Library of Yunlin Country.  All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- footer End -->
+
+		<a href="javascript:;" class="scrollToTop">回頁首</a> 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YPZCN9KRS"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-9YPZCN9KRS');
+		</script>
+		<!-- JQ -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- 外掛 plugin js -->
+		<script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+		<script src="vendor/slick/slick.js "></script><!-- slick -->
+		<script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+		<script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+		<script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+		<script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+		<script src="vendor/pg_calendar/js/pignose.calendar.full.js"></script>
+		<!-- hyUI -->
+		<script src="js/hyui.js"></script>
+		<!-- 客製js -->
+		<script src="js/customize.js"></script>
+		<!-- WOW -->
+		<script src="vendor/wow/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38719925-51"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-38719925-51');
+		</script></section>
+	</div>
+	<script type="text/javascript"></script>
+	<noscript>TAB標籤效果，如不執行不影響您資料瀏覽</noscript>
+</body>
+</html>
