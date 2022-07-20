@@ -139,7 +139,7 @@ h3.title{
             padding:.5em 0;
             .num{
                 font-weight: bold;
-                color:$primaryColor;
+                color:$importantColor;
             }
         }
     }
@@ -266,7 +266,7 @@ div.tag {
     }
     .result_content{
         display:inline-block;
-        color:darken($primaryColor, 10);
+        color:darken($primaryColor, 30);
         @include screen('xs_mobile'){
             display:block;
         }
@@ -564,7 +564,7 @@ div.tag {
     padding: 0.8em 1.5em 0.8em;
     background: #F2F2F2;
     @extend %clearfix;
-     @include box-sizing;
+    @include box-sizing;
     @include screen('mobile') {
         font-size: 0.938em;
     }
@@ -587,7 +587,7 @@ div.tag {
 .questionnaire{
     h3{
         background:$lightColor;
-        color:$primaryColor;
+        color:darken($primaryColor,20);
         text-align: center;
         padding:.5em;
     }
@@ -640,3 +640,4 @@ div.tag {
         }
     }
 }
+

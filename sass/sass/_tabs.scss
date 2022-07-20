@@ -20,18 +20,19 @@
         //float: left;
         position: relative;
         display:inline-block;
-        font-size:1.063em;
+        font-size:1.125rem;
         line-height: 1;
         font-weight: bold;
         margin:0;
         &.active{
             >a {
-                background: $secondaryColor;
+                background: $primaryColor;
                 color:#fff;
                 border-radius: 30px;
                 @include screen('mobile') {
                   margin-bottom: 0;  
               }
+
           }
           &:before{
 
@@ -46,14 +47,14 @@
             margin-left: -10px;
             border-style: solid;
             border-width: 8px 9px 0 9px;
-            border-color: $secondaryColor transparent transparent transparent;
+            border-color: $primaryColor transparent transparent transparent;
 
         }
     }
 
     &>a {
         display: block;
-        padding: .5em 1.2em;
+        padding: .5em 1.2em .65em;
         text-align: center;
         // background-color: #fff;
         color: $secondaryColor;
@@ -61,6 +62,7 @@
         position: relative;
         transition: all .3s;
         min-width: 5em;
+        font-size: 1.125rem;
         @include text-overflow;
         @include box-sizing;
         @include screen('mobile') {
@@ -70,7 +72,7 @@
             border-radius: 30px;
         }
         &:hover {
-            background: $secondaryColor;
+            background: $primaryColor;
             color:#fff;
             border-radius: 30px;
         }

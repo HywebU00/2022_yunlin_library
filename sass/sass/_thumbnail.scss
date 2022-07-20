@@ -13,9 +13,11 @@
 
     a {
         display: block;
-        @include aSetting(#555);
+        @include aSetting(#4c4948);
         position: relative;
-
+        &:hover, &:focus{
+            color:$aHover;
+        }
         &:focus {
             &:before {
                 content: "";
@@ -46,6 +48,8 @@
     h3,
     h4 {
         margin: .2em 0;
+        font-size:1.125em;
+        @include text-overflow;
     }
 
     .caption {
@@ -66,5 +70,11 @@
     hr {
         width: 90%;
         margin: .1em auto 1em;
+    }
+    p{
+        height: 2.8em;
+        overflow:hidden;
+        margin: .5em 0;
+
     }
 }

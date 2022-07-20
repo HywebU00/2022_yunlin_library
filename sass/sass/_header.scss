@@ -2,7 +2,11 @@
 .header {
     position: relative;
     z-index: 99;
-    // background: #FFF;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
     @extend %clearfix;
     @include screen('mobile') {
         position: fixed;
@@ -51,6 +55,7 @@
         .sidebarCtrl {
             display: none;
             left: 0px;
+            top:7px;
             @extend %mobileCtrlBtn;
             span {
                 position: absolute;
@@ -71,7 +76,7 @@
         }
         // search
         .searchCtrl {
-            display: none;
+            display: none!important;
             right: 0px;
             font-size: 0em;
             @extend %mobileCtrlBtn;
@@ -90,11 +95,16 @@
         }
     }
     h1 {
-        float: left;
+        // float: left;
         width: 300px;
-        height: 60px;
-        margin: 0 0 20px 0;
+        height: 100px;
+        margin: -50px 0 20px 0;
         padding: 0;
+        // width: 340px;
+        // height: 70px;
+        // margin: 20px 0 20px 0;
+        // padding: 0;
+
         @include box-sizing;
         a {
             display: inline-block;
@@ -102,7 +112,8 @@
         img {
             display: block;
             width:100%;
-            max-width: 250px;
+            max-width: 200px;
+            // max-width: 340px;
 
         }
         @media screen and (max-width: 1099px) and (min-width: 768px){
@@ -115,12 +126,12 @@
             padding: 2px 60px;
             width: 100%;
             text-align: center;
-            height: 60px;
+            height: 80px;
             margin:0;
             img {
                 width: 100%;
                 height: auto;
-                max-height: 54px;
+                max-height: 80px;
                 margin: 0px auto;
                 transform: scale(.8);
                 // @include screen('xs_mobile'){
@@ -192,6 +203,7 @@
     float: right;
     vertical-align: middle;
     padding: .3em;
+    display: none!important;
     //overflow: hidden;
     @include screen('tablet'){
         min-width: 30%;

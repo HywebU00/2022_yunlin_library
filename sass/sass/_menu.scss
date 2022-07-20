@@ -37,12 +37,13 @@
         // }
         >a {
             display: block;
-            padding: 0 1.5em 0 .8em;
+            padding: 0 .8em;
             min-height: 2.5em;
             font-weight: bold;
             line-height: 2.5em;
-            font-size: 1.125em;
-            color: $secondaryColor;
+            font-size: 1.125rem;
+            color:$color-word;
+            font-weight: bold;
         }
         &.hasChild {
             >a {
@@ -107,6 +108,7 @@
                 padding: .6em 1.2em;
                 color: #FFF;
                 //font-weight: bold;
+                font-size: .938rem;
                 &:hover, &:focus {
                     background: $aHover;
                 }

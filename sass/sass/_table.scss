@@ -13,14 +13,15 @@ table {
     td {
         border: #ddd 1px solid;
         word-break: break-all;
+        background: #fff;
         a {
             word-break: break-all;
         }
     }
     th {
-        background-color: #F3F3F3;
+        background-color: #E3E3E3;
         color: #333;
-        border: #DDD 1px solid;
+        border: #ccc 1px solid;
         text-align: center;
         white-space: nowrap;
     }

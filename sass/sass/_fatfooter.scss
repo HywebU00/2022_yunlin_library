@@ -121,7 +121,7 @@
                     color:#fff;
                     @include box-sizing;
                     &:hover, &:focus{
-                        color:#fcfbdd;
+                        color:#fff;
                         text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
                     }
                 }
@@ -142,7 +142,7 @@
                         }
                         a {
                             display: block;
-                            color: #caffe2;
+                            color: #fff;
                             text-decoration: none;
                             text-align: left;
                             font-size: .875em;

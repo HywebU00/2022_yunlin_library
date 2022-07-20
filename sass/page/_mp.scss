@@ -11,7 +11,7 @@ section {
 
 .mp{
     >section{
-        padding: 1em 0 0 0;
+        padding: .5em 0 0 0;
         @include screen('mobile') {
             padding: 0 0 1em 0;
         }
@@ -36,7 +36,7 @@ section {
     }
     .bg-1 {
         // background: $primaryColor url(../images/flower_w_02.png) left 0px bottom -60px no-repeat;
-        padding-bottom: 3em;
+        // padding-bottom: 3em;
         margin-top: 0;
         // margin-left: 70px;
         position: relative;
@@ -92,16 +92,16 @@ section {
         @include screen('mobile') {
             padding:0;
         }
-        &:after{
-          content:'';
-          position: absolute;
-          bottom:-25px;
-          right: 0px;
-          width: 30%;
-          height: 197px;
-          background: url(../images/bg_dot.png) right 0px bottom 0px;
-          z-index: -1; 
-      }
+      //   &:after{
+      //     content:'';
+      //     position: absolute;
+      //     bottom:-25px;
+      //     right: 0px;
+      //     width: 30%;
+      //     height: 197px;
+      //     background: url(../images/bg_dot.png) right 0px bottom 0px;
+      //     z-index: -1; 
+      // }
       &.has_bg{
         height: auto;
 
@@ -133,7 +133,7 @@ section {
                      width: 50px; 
                  }
                  li.slick-active button:before{
-                    background: #154d70;
+                    background: $secondaryColor;
                     width: 44px!important;
                 }
 
@@ -425,12 +425,12 @@ section {
             .logout{
                 border:none;
                 color: #fff;
-                background: $importantColor;
+                background: $primaryColor;
                 border-radius: 30px;
                 padding: .4em 2.5em;
 
                 &:hover, &:focus{
-                    background: darken($importantColor,10);
+                    background: darken($primaryColor,10);
                 }
             }
         }
@@ -561,8 +561,9 @@ section {
             display: flex;
             align-content: center;
             align-items: center;
-            color:$primaryColor;
+            color:$color-word;
             font-weight: bold;
+            font-size: 1.125rem;
             .pic{
                 width: 60px;
                 height:60px;
@@ -581,7 +582,7 @@ section {
                 }
             }
             &:hover, &:focus{
-                color:darken($primaryColor,10);
+                color:darken($primaryColor,26);
                 .pic{
                     border-radius: 50%;
                 }
@@ -591,25 +592,25 @@ section {
 }
 //近期活動
 .recent_activities{
-    margin-bottom: 2em;
+    // margin-bottom: 2em;
     h2{
-        line-height: 3.5em;
+        // line-height: 3.5em;
         // padding-right: 400px;
         position: relative;
-        &:before{
-            content:'';
-            width: 196px;
-            height: 109px;
-            position: absolute;
-            top:0;
-            left:2.7em;
-            background: url(../images/bg_dot3.png)no-repeat right 0px top 0px;
-        }
+        // &:before{
+        //     content:'';
+        //     width: 196px;
+        //     height: 109px;
+        //     position: absolute;
+        //     top:0;
+        //     left:2.7em;
+        //     background: url(../images/bg_dot3.png)no-repeat right 0px top 0px;
+        // }
     }
     .select_library{
         position: absolute;
         right: 15px;
-        top: 4em;
+        top: 2em;
         @include screen('mobile') {
             position: static;
         }
@@ -652,7 +653,7 @@ section {
         float: left;
         font-weight: bold;
         font-family: "Georgia";
-        color: $color-word;
+        color: $secondaryColor;
         padding:.5em 0;
         position: relative;
         border-radius:.31em 0 0 .31em;
@@ -681,8 +682,9 @@ section {
         }
         .activity_title{
             color: $color-word;
-            font-weight: bold;
-            font-size: 1.125em;
+            // font-weight: bold;
+
+            font-size: 1em;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -713,7 +715,7 @@ section {
             padding:0 .5em;
             margin:-2.1em 0 0;
             float: right;
-            color: $primaryColor;
+            color: darken($primaryColor,26);
             transition: all .3s;
 
             @include screen('mobile'){
@@ -830,15 +832,15 @@ section {
 .book_display{
     position: relative;
     z-index: 1;
-    &:before{
-        content:'';
-        position: absolute;
-        right:0;
-        top:-15px;
-        width: 40%;
-        height: 53px;
-        background: url('../images/bg_dot4.png')repeat-x left top;
-    }
+    // &:before{
+    //     content:'';
+    //     position: absolute;
+    //     right:0;
+    //     top:-15px;
+    //     width: 40%;
+    //     height: 53px;
+    //     background: url('../images/bg_dot4.png')repeat-x left top;
+    // }
 
     .tabSet{
         // margin-top: 0;
@@ -941,12 +943,12 @@ section {
     }
     .closed{
         &:before{
-            background: $color-gray;
+            background: #f0584a;
         }
     }
     .activity_day{
         &:before{
-            background: #f0584a;
+            background: $color-gray;
         }
     }
 }
@@ -994,8 +996,8 @@ section {
         }
         &.pignose-calendar-unit-active{
             a{
-                background: #f0584a!important;
-                color:#fff;
+                background: #eee!important;
+                color:#333;
             }
         }
         &.pignose-calendar-unit-sat, &.pignose-calendar-unit-sun{
@@ -1006,6 +1008,8 @@ section {
         &.pignose-calendar-unit-disabled{
             a{
                 opacity:1;
+                background-color: #f0584a;
+                color:#fff;
             }
         }
         .pignose-calendar-button-schedule-container {
@@ -1043,7 +1047,7 @@ section {
         padding: .5em 1.5em;
         margin:.2em 0;
         text-align: center;
-        background-color: #dbe9e9;
+        background-color: #E8E8E8;
         color: darken($secondaryColor, 10);
         text-decoration: none;
         border:0;
@@ -1054,7 +1058,7 @@ section {
         border-radius: 30px;
         @include box-sizing;
         &:hover, &.active{
-            background: $secondaryColor;
+            background: $primaryColor;
             color:#fff;
             box-shadow:none;
         }
@@ -1064,24 +1068,24 @@ section {
 .library_info{
     // padding: 0 15px!important;
     position: relative;
-    &:before{
-        content:'';
-        height: 196px;
-        width: 35%;
-        background: url('../images/bg_dot.png') right top;
-        position: absolute;
-        left:0;
-        bottom:0;
-    }
-    &:after{
-        content:'';
-        position: absolute;
-        right:0;
-        top:30px;
-        width: 55%;
-        height: 53px;
-        background: url('../images/bg_dot4.png')repeat-x left top;
-    }
+    // &:before{
+    //     content:'';
+    //     height: 196px;
+    //     width: 35%;
+    //     background: url('../images/bg_dot.png') right top;
+    //     position: absolute;
+    //     left:0;
+    //     bottom:0;
+    // }
+    // &:after{
+    //     content:'';
+    //     position: absolute;
+    //     right:0;
+    //     top:30px;
+    //     width: 55%;
+    //     height: 53px;
+    //     background: url('../images/bg_dot4.png')repeat-x left top;
+    // }
     @include screen('mobile') {
         background-position:right -50px top 80px;
     }
@@ -1129,7 +1133,7 @@ section {
             }
         }
         .library_name{
-            font-family: 'Noto Serif TC', serif;
+            font-family: 'Noto Sans TC', sans-serif;
             font-size:1.7em;
             font-weight:normal;
             color:#fff;
@@ -1139,6 +1143,7 @@ section {
 
         }
         .info_list_wrap{
+            // background: darken($primaryColor,26);
             background: $primaryColor;
             color:#fff;
             padding:1em;
@@ -1161,7 +1166,7 @@ section {
         span{
             display: block;
             font-weight: bold;
-            color:#caffe2;
+            color:#fff;
 
             @include screen('tablet') {
                 display: inline-block;
@@ -1312,6 +1317,7 @@ section {
     position: absolute;
     top:0;
     left:0;
+    display: none;
     ul{
         @include li-reset;
         li{

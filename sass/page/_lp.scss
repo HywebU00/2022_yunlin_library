@@ -207,7 +207,7 @@
                 margin: .25em 0;
             }
             a{
-                background: #dbe9e9;
+                background: #E8E8E8;
                 color: darken($secondaryColor, 10);
                 display: inline-block;
                 padding: .5em 1.5em;
@@ -221,7 +221,7 @@
                 &:hover,
                 &:focus,
                 &.active {
-                    background: $secondaryColor;
+                    background: $primaryColor;
                     color: #fff;
                 }
                 &.active {
@@ -363,9 +363,9 @@
             overflow: hidden;
             padding:.5em 120px 1em 1em;
             @include screen("mobile") {
-               padding:.5em 1em 1em;
-           }
-           h2, h3, h4{
+             padding:.5em 1em 1em;
+         }
+         h2, h3, h4{
             margin-bottom: .5em;
             overflow: hidden;
             white-space: nowrap;
@@ -407,9 +407,9 @@
             color: $color-word;
             text-align: center;
             &.register{
-             color: $primaryColor;
-         }
-         &.full{
+               color: $importantColor;
+           }
+           &.full{
             color: lighten($color-word, 10);
         }
         span{
