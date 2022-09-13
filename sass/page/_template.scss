@@ -64,7 +64,7 @@ body {
         @include gutter;
     }
     .news, .recent_activities{
-       overflow: hidden;
+     overflow: hidden;
        //background-color: #fff;
        @include screen('mobile') {
         padding-left:15px;
@@ -231,7 +231,7 @@ body {
     font-size: .938em;
     text-align: center;
     margin: 25px 0 10px;
-    width: 8em;
+    width: 10em;
     position: relative;
     float: right;
 
